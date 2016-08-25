@@ -1,1 +1,17 @@
+hr {
+  width: 25%;
+}
 
+.jumbotron {
+  height: 93vh;
+}
+
+.lead {
+  font-size: 1.7em;
+}
+
+@media screen and (min-width: 768px) {
+  .lead {
+    font-size: 2em;
+  }
+}
