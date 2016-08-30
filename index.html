@@ -39,7 +39,7 @@
     <div class="container-fluid text-xs-center">
       <div class="row no-gutter">
         <div class="col-md-6 col-sm-12">
-          <div class="box">
+          <div class="box p-x-3">
             <h2 class="m-t-3">FootDrive - Coming Soon!</h2>
             <hr>
             <p class="m-t-1">A social network for fans sharing lifts to football matches.</p>
@@ -49,7 +49,7 @@
           </div>
         </div>
         <div class="col-md-6 col-sm-12">
-          <div class="box">
+          <div class="box p-x-3">
             <h2 class="m-t-3">ThePokeRaf</h2>
             <hr>
             <p class="m-t-1">A simple website for a Pokemon Youtuber with over 10 Thousand Subscribers.</p>
@@ -59,10 +59,10 @@
           </div>
         </div>
         <div class="col-md-6 col-sm-12">
-          <div class="box">
+          <div class="box p-x-3">
             <h2 class="m-t-3">JacksonJacobDeveloper</h2>
             <hr>
-            <p class="m-t-1 m-l-1">A portfolio website for a Computer Science undergraduate, Jackson Jacob, to showcase
+            <p class="m-t-1">A portfolio website for a Computer Science undergraduate, Jackson Jacob, to showcase
             all of his work.</p>
             <p>Built with HTML, CSS, JavaScript and PHP.</p>
             <button type="button" class="btn btn-secondary">Read more</button>
@@ -70,10 +70,10 @@
           </div>
         </div>
         <div class="col-md-6 col-sm-12">
-          <div class="box">
+          <div class="box p-x-3">
             <h2 class="m-t-3">Weather App - Coming Soon!</h2>
             <hr>
-            <p class="m-t-1 m-l-1">'Build a weather app challenge' on FreeCodeCamp, allowing the user to get the weather
+            <p class="m-t-1">'Build a weather app challenge' on FreeCodeCamp, allowing the user to get the weather
             in a particular area.</p>
             <p>Built with HTML, CSS and JavaScript.</p>
             <button type="button" class="btn btn-secondary">Read more</button>
@@ -97,14 +97,30 @@
               <li class="m-x-2"><a href="https://github.com/jamesbarrett95"><i class="fa fa-3x fa-github" aria-hidden="true"></i></a></li>
               <li class="m-x-2"><a href="https://www.linkedin.com/in/jamesbarrett95?authType=NAME_SEARCH&authToken=KZYO&locale=en_US&trk=tyah&trkInfo=clickedVertical%3Amynetwork%2CclickedEntityId%3A101657775%2CauthType%3ANAME_SEARCH%2Cidx%3A1-1-1%2CtarId%3A1472574298832%2Ctas%3Ajames%20barrett"><i class="fa fa-3x fa-linkedin" aria-hidden="true"></i></a></li>
             </ul>
+            <hr class="modal-hr">
+            <form action="#" method="post" id="contactform" name="contactform">
+              <fieldset class="form-group" id="nameresult">
+                <label for="Name">Name</label>
+                <input type="text" class="form-control" id="name" name="name" placeholder="Example: John Smith">
+              </fieldset>
+              <fieldset class="form-group" id="emailresult">
+                <label for="Email">Email</label>
+                <input type="email" class="form-control" id="email" name="email" placeholder="Example: johnsmith@mail.com">
+              </fieldset>
+              <fieldset class="form-group" id="messageresult">
+                <label for="Message">Message</label>
+                <textarea class="form-control" id="message" rows="5" name="message" placeholder="Hi there! My name is John Smith..."></textarea>
+              </fieldset>
+            </form>
           </div>
           <div class="modal-footer">
             <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-            <button type="button" class="btn btn-primary">Save changes</button>
+            <button type="button" class="btn btn-primary">Submit</button>
           </div>
         </div><!-- /.modal-content -->
       </div><!-- /.modal-dialog -->
     </div><!-- /.modal -->
+
     <!-- jQuery first, then Tether, then Bootstrap JS. -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.0.0/jquery.min.js" integrity="sha384-THPy051/pYDQGanwU6poAc/hOdQxjnOEXzbT+OuUAFqNqFjL+4IGLBgCJC3ZOShY" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.2.0/js/tether.min.js" integrity="sha384-Plbmg8JY28KFelvJVai01l8WyZzrYWG825m+cZ0eDDS1f7d/js6ikvy1+X+guPIB" crossorigin="anonymous"></script>

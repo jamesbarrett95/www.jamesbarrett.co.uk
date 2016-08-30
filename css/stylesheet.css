@@ -74,6 +74,18 @@ hr {
 /*****************
    Contact
 ******************/
+label {
+  float: left;
+}
+
+.social-media {
+  padding-left: 0;
+}
+
 .social-media li {
   display: inline-block;
+}
+
+.modal-hr {
+  width: 75%;
 }
