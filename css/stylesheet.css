@@ -1,3 +1,21 @@
+.large {
+  font-size: 2em;
+}
+/*****************
+   General Styles
+******************/
+hr {
+  width: 25%;
+}
+
+.white {
+  color: #FFF;
+}
+
+.background-white {
+  background-color: #FFF;
+}
+
 /*****************
    Navigation
 ******************/
@@ -9,12 +27,6 @@
   display: inline-block;
 }
 
-li {
-  font-size: 30px;
-  padding-left: 4px;
-  padding-right: 4px;
-}
-
 /*****************
    Jumbotron
 ******************/
@@ -24,18 +36,37 @@ li {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  background: linear-gradient(rgba(25, 0, 0, 0.5), rgba(255, 0, 0, 0.5)),
+  url(../img/jumbotron.jpg) no-repeat center center fixed;
+  background-size: cover;
 }
 
 .lead {
   font-size: 1.7em;
 }
 
-hr {
+.contact-link:hover {
+  color: rgba(255, 255, 255, 0.7);
+  text-decoration: none;
+}
+
+.border:after {
+  content: "";
   width: 25%;
+  border-bottom: 2px solid #FFF;
+  display: block;
+  margin: 6px auto 0;
 }
 
 .fa-chevron-down {
   margin-top: 100px;
+  color: #FFF;
+}
+
+@media screen and (min-width: 992px) {
+  .border:after {
+    width: 20%;
+  }
 }
 
 @media screen and (min-width: 768px) {
