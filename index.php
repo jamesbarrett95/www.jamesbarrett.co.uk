@@ -1,41 +1,51 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <!-- Required meta tags always come first -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta http-equiv="x-ua-compatible" content="ie=edge">
-
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.3/css/bootstrap.min.css" integrity="sha384-MIwDKRSSImVFAZCVLtU0LMDdON6KVCrZHyVQQj6e8wIEJkW4tvwqXrbMIya1vriY" crossorigin="anonymous">
-    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-T8Gy5hrqNKT+hzMclPo118YTQO6cYprQmhrYwIiQ/3axmI1hQomh7Ud2hPOy8SP1" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="css/stylesheet.css">
-  </head>
-
-  <body>
-    <!--Navigation-->
-    <nav class="navbar bg-faded navbar-fixed-top">
-      <ul class="nav navbar-nav">
-        <li class="nav-item p-x-1 large">
-          <a class="nav-link" href="#work">Work</a>
-        </li>
-        <li class="nav-item p-x-1 large">
-          <a class="nav-link" href="#" data-toggle="modal" data-target="#contact">Contact</a>
-        </li>
-      </ul>
-    </nav>
-
-    <!--Jumbotron/Header-->
-    <div class="jumbotron jumbotron-fluid no-margin-bottom">
-      <div class="container text-xs-center">
-        <h1 class="display-2 m-t-1 m-b-2 white">James Barrett</h1>
-        <p class="lead white">Let's keep this simple. I am an aspiring Front-End Developer,
-        lifelong learner and Arsenal sufferer. View my work below.</p>
-        <p class="lead white border"><a class="contact-link white" href="#" data-toggle="modal" data-target="#contact">Contact me here.</a></p>
-        <a href="#work"><i class="fa fa-2x fa-chevron-down" aria-hidden="true"></i></a>
-      </div>
-    </div>
-
+<?php
+ini_set('display_startup_errors', 1);
+ini_set('display_errors', 1);
+error_reporting(-1);
+  if($_SERVER["REQUEST_METHOD"] == "POST") {
+    // Collect user input - Filter and Sanitize
+    $name = trim(filter_input(INPUT_POST, "name", FILTER_SANITIZE_STRING));
+    $email = trim(filter_input(INPUT_POST, "email", FILTER_SANITIZE_EMAIL));
+    $message = trim(filter_input(INPUT_POST, "message", FILTER_SANITIZE_STRING));
+    // No input validation
+    if($name == "" || $email == "" || $message == "") {
+      $error_message = "Please fill in all form fields";
+    }
+    // Require the PHPMailer Library
+    require("inc/PHPMailer-master/PHPMailerAutoload.php");
+    $mail = new PHPMailer;
+    // Invalid Email Validation
+    if(!isset($error_message) && !$mail->ValidateAddress($email)) {
+      $error_message = "Invalid Email Address";
+    }
+    // If no error message is set, create the email and set up SMTP
+    if(!isset($error_message)) {
+      $email_body = "";
+      $email_body .= "Name: " . $name ."\n";
+      $email_body .= "Email: " . $email ."\n";
+      $email_body .= "Message: " . $message ."\n";
+      $mail->IsSMTP();
+      $mail->SMTPAuth = true;
+      $mail->Host = "smtp.postmarkapp.com";
+      $mail->Port = 25;
+      $mail->Username = "a894302f-b2b4-499d-9113-b82cf8cc9ec0";
+      $mail->Password = "a894302f-b2b4-499d-9113-b82cf8cc9ec0";
+      $mail->setFrom("UP734253@myport.ac.uk");
+      $mail->addAddress("UP734253@myport.ac.uk", "James");
+      $mail->isHTML(false);
+      $mail->Subject = 'Message from ' . $name;
+      $mail->Body    = $email_body;
+      // If the mail sends...
+      if($mail->send()) {
+        header("location:thankyou.php");
+        exit;
+      }
+        $error_message = 'Message could not be sent.';
+        $error_message .= 'Mailer Error: ' . $mail->ErrorInfo;
+      }
+    }
+ include("inc/header.php");
+?>
     <!--Work-->
     <div class="container-fluid text-xs-center" id="work">
       <div class="row no-gutter">
@@ -183,7 +193,7 @@
               <li class="m-x-2 large"><a href="https://www.linkedin.com/in/jamesbarrett95?authType=NAME_SEARCH&authToken=KZYO&locale=en_US&trk=tyah&trkInfo=clickedVertical%3Amynetwork%2CclickedEntityId%3A101657775%2CauthType%3ANAME_SEARCH%2Cidx%3A1-1-1%2CtarId%3A1472574298832%2Ctas%3Ajames%20barrett"><i class="fa fa-3x fa-linkedin" aria-hidden="true"></i></a></li>
             </ul>
             <hr class="modal-hr">
-            <form action="#" method="post" id="contactform" name="contactform">
+            <form action="index.php" method="post" id="contactform" name="contactform">
               <fieldset class="form-group" id="nameresult">
                 <label for="Name">Name</label>
                 <input type="text" class="form-control" id="name" name="name" placeholder="Example: John Smith">
@@ -196,12 +206,12 @@
                 <label for="Message">Message</label>
                 <textarea class="form-control" id="message" rows="5" name="message" placeholder="Hi there! My name is John Smith..."></textarea>
               </fieldset>
-            </form>
           </div>
           <div class="modal-footer">
             <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-            <button type="button" class="btn btn-primary">Submit</button>
+            <button type="submit" id="submit" value="submit" class="btn btn-primary">Submit</button>
           </div>
+          </form>
         </div><!-- /.modal-content -->
       </div><!-- /.modal-dialog -->
     </div><!-- /.modal -->
