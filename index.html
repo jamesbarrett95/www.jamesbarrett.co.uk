@@ -20,7 +20,7 @@
           <a class="nav-link" href="#work">Work</a>
         </li>
         <li class="nav-item p-x-1 large">
-          <a class="nav-link" data-toggle="modal" data-target="#contact">Contact</a>
+          <a class="nav-link" href="#" data-toggle="modal" data-target="#contact">Contact</a>
         </li>
       </ul>
     </nav>
@@ -45,29 +45,29 @@
             <hr>
             <p class="m-t-1">A social network for fans sharing lifts to football matches.</p>
             <p>Built with HTML, CSS, JavaScript, PHP and SQL</p>
-            <button type="button" class="btn btn-secondary">Read more</button>
-            <button type="button" class="btn btn-primary">View on GitHub</button>
+            <button type="button" class="btn btn-secondary" data-toggle="modal" data-target="#footdrive">Read more</button>
+            <button type="button" class="btn btn-primary" disabled>View on GitHub</button>
           </div>
         </div>
         <div class="col-md-6 col-sm-12">
-          <div class="box p-x-3">
+          <div class="box p-x-3 pokeraf">
             <h2 class="m-t-3">ThePokeRaf</h2>
             <hr>
             <p class="m-t-1">A simple website for a Pokemon Youtuber with over 10 Thousand Subscribers.</p>
             <p>Built with HTML, CSS, jQuery and PHP.</p>
-            <button type="button" class="btn btn-secondary">Read more</button>
-            <button type="button" class="btn btn-primary">View on GitHub</button>
+            <button type="button" class="btn btn-secondary" data-toggle="modal" data-target="#thepokeraf">Read more</button>
+            <a href="https://github.com/jamesbarrett95/www.thepokeraf.co.uk" target="_blank"><button type="button" class="btn btn-primary">View on GitHub</button></a>
           </div>
         </div>
         <div class="col-md-6 col-sm-12">
-          <div class="box p-x-3">
-            <h2 class="m-t-3">JacksonJacobDeveloper</h2>
+          <div class="box p-x-3 jacksonjacobdeveloper">
+            <h2 class="m-t-3">Jackson Jacob Developer</h2>
             <hr>
             <p class="m-t-1">A portfolio website for a Computer Science undergraduate, Jackson Jacob, to showcase
             all of his work.</p>
             <p>Built with HTML, CSS, JavaScript and PHP.</p>
-            <button type="button" class="btn btn-secondary">Read more</button>
-            <button type="button" class="btn btn-primary">View on GitHub</button>
+            <button type="button" class="btn btn-secondary" data-toggle="modal" data-target="#jacksonjacobdeveloper">Read more</button>
+            <a href="https://github.com/jamesbarrett95/www.jacksonjacobdeveloper.com" target="_blank"><button type="button" class="btn btn-primary">View on GitHub</button></a>
           </div>
         </div>
         <div class="col-md-6 col-sm-12">
@@ -77,12 +77,96 @@
             <p class="m-t-1">'Build a weather app challenge' on FreeCodeCamp, allowing the user to get the weather
             in a particular area.</p>
             <p>Built with HTML, CSS and JavaScript.</p>
-            <button type="button" class="btn btn-secondary">Read more</button>
-            <button type="button" class="btn btn-primary">View on GitHub</button>
+            <button type="button" class="btn btn-secondary" data-toggle="modal" data-target="#weatherapp">Read more</button>
+            <button type="button" class="btn btn-primary" disabled>View on GitHub</button>
           </div>
         </div>
       </div>
     </div>
+
+    <!-- FootDrive Modal -->
+    <div class="modal fade" tabindex="-1" role="dialog" id="footdrive">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title">FootDrive</h4>
+          </div>
+          <div class="modal-body">
+            <p>FootDrive is a 2nd year university project and is a social network for football fans of the Premier League.
+            I felt that travelling to football games can be very expensive in the United Kingdom. So FootDrive gives users
+            the opportunity to find drivers going to a particular game and share a ride! Users can find and offer lifts,
+            follow drivers, share posts and more!</p>
+          </div>
+          <div class="modal-footer">
+            <a href="#"><button type="button" class="btn btn-default" disabled>View on GitHub</button></a>
+            <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+          </div>
+        </div><!-- /.modal-content -->
+      </div><!-- /.modal-dialog -->
+    </div><!-- /.modal -->
+
+    <!--ThePokeRaf Modal-->
+    <div class="modal fade" tabindex="-1" role="dialog" id="thepokeraf">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title">FootDrive</h4>
+          </div>
+          <div class="modal-body">
+            <p>ThePokeRaf is a one page website for a Pokemon content creator which allows for a user
+            to view his latest video and contact him for any collaborations or video suggestions. I utilised
+            'flexbox', a CSS3 tool that allows for layouts to be developed easily and efficiently. Moreover, to reinforce my
+            jQuery skills, I built the contact form without any plugins.</p>
+          </div>
+          <div class="modal-footer">
+            <a href="https://github.com/jamesbarrett95/www.thepokeraf.co.uk" target="_blank"><button type="button" class="btn btn-default">View on GitHub</button></a>
+            <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+          </div>
+        </div><!-- /.modal-content -->
+      </div><!-- /.modal-dialog -->
+    </div><!-- /.modal -->
+
+    <!--JacksonJacobDeveloper Modal-->
+    <div class="modal fade" tabindex="-1" role="dialog" id="jacksonjacobdeveloper">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title">JacksonJacobDeveloper</h4>
+          </div>
+          <div class="modal-body">
+            <p>Jackson Jacob Developer is a portfolio website for a computer science undergraduate to showcase all of his work.
+            Built using BootStrap 3 to ensure I had a popular front-end framework in my skillset. Moreover, being able to work
+            with a real world client allowed for me to work to deadlines and put my communciation skills to test.</p>
+          </div>
+          <div class="modal-footer">
+            <a href="https://github.com/jamesbarrett95/www.jacksonjacobdeveloper.com" target="_blank"><button type="button" class="btn btn-default">View on GitHub</button></a>
+            <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+          </div>
+        </div><!-- /.modal-content -->
+      </div><!-- /.modal-dialog -->
+    </div><!-- /.modal -->
+
+    <!--Weather App Modal-->
+    <div class="modal fade" tabindex="-1" role="dialog" id="weatherapp">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title">JacksonJacobDeveloper</h4>
+          </div>
+          <div class="modal-body">
+            <p>A weather app challenge assigned by FreeCodeCamp. This allowed for me to develop my JavaScript and problem solving skills </p>
+          </div>
+          <div class="modal-footer">
+            <a href="#" target="_blank"><button type="button" class="btn btn-default" disabled>View on GitHub</button></a>
+            <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+          </div>
+        </div><!-- /.modal-content -->
+      </div><!-- /.modal-dialog -->
+    </div><!-- /.modal -->
 
     <!-- Contact Modal -->
     <div class="modal fade" id="contact" tabindex="-1" role="dialog">

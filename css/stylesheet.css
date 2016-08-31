@@ -1,6 +1,3 @@
-.large {
-  font-size: 2em;
-}
 /*****************
    General Styles
 ******************/
@@ -8,12 +5,12 @@ hr {
   width: 25%;
 }
 
-.white {
-  color: #FFF;
+.large {
+  font-size: 2em;
 }
 
-.background-white {
-  background-color: #FFF;
+.white {
+  color: #FFF;
 }
 
 /*****************
@@ -94,6 +91,18 @@ hr {
   background-size: 100% 202%;
   transition: all 0.2s ease;
   animation: down-bump 0.4s ease;
+}
+
+.pokeraf {
+  background: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)),
+  url(../img/pokeraf.jpg) no-repeat center center fixed;
+  background-size: cover;
+}
+
+.jacksonjacobdeveloper {
+  background: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)),
+  url(../img/code-bg-min.jpg) no-repeat center center fixed;
+  background-size: cover;
 }
 
 @media screen and (min-width: 769px) and (max-width: 1200px) {
