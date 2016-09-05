@@ -209,7 +209,7 @@ error_reporting(-1);
           </div>
           <div class="modal-footer">
             <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-            <button type="submit" id="submit" value="submit" class="btn btn-primary">Submit</button>
+            <button type="submit" id="submit" value="submit" class="btn btn-primary" disabled>Submit</button>
           </div>
           </form>
         </div><!-- /.modal-content -->
