@@ -13,6 +13,11 @@ hr {
   color: #FFF;
 }
 
+/* Heading for no JavaScript Enabled */
+h2 {
+  font-size: 1.25em;
+}
+
 /*****************
    Navigation
 ******************/

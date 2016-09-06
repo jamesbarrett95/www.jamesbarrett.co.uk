@@ -28,6 +28,13 @@
     <!--Jumbotron/Header-->
     <div class="jumbotron jumbotron-fluid no-margin-bottom">
       <div class="container text-xs-center">
+        <noscript>
+            <div>
+              <h2 class="white">In order to contact me you must have JavaScript enabled.
+              <u><a class="contact-link white" href="http://www.enable-javascript.com" target="_blank">Instructions how
+              to enable JavaScript in your web browser</a></u></h2>
+            </div>
+        </noscript>
           <?php
             if(isset($thankyou)) {
               echo "<h1 class='display-2 m-t-1 m-b-2 white'>Thank you!</h1>";
