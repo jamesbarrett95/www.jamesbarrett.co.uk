@@ -24,6 +24,12 @@ function checkNameLength() {
   }
 }
 
+function checkEmailLength() {
+  if($(this).val().length < 1) {
+		validateEmail(this);
+  } 
+}
+
 // Check length of message field
 function checkMessageLength() {
   if($(this).val().length < 1) {
@@ -63,11 +69,17 @@ $('#email').keyup(function(){
     validateEmail($('#email').val());
   });
 
+$('#email').focus(function(){
+	  validateEmail($('#email').val());
+	});
+
 // length calls
 $('#name').keyup(checkNameLength);
 $('#name').focus(checkNameLength);
 $('#message').keyup(checkMessageLength);
 $('#message').focus(checkMessageLength);
+$('#email').keyup(checkEmailLength);
+$('#email').focus(checkEmailLength);
 
 // Calls to state of the submit button
 $('#name').keyup(enableSubmitEvent);

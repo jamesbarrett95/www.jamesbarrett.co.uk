@@ -196,15 +196,15 @@ error_reporting(-1);
             <form action="index.php" method="post" id="contactform" name="contactform">
               <fieldset class="form-group" id="nameresult">
                 <label for="Name">Name</label>
-                <input type="text" class="form-control" id="name" name="name" placeholder="Example: John Smith">
+                <input type="text" class="form-control form-control-danger form-control-success" id="name" name="name" placeholder="Example: John Smith">
               </fieldset>
               <fieldset class="form-group" id="emailresult">
                 <label for="Email">Email</label>
-                <input type="email" class="form-control" id="email" name="email" placeholder="Example: johnsmith@mail.com">
+                <input type="email" class="form-control form-control-danger form-control-success" id="email" name="email" placeholder="Example: johnsmith@mail.com">
               </fieldset>
               <fieldset class="form-group" id="messageresult">
                 <label for="Message">Message</label>
-                <textarea class="form-control" id="message" rows="5" name="message" placeholder="Hi there! My name is John Smith..."></textarea>
+                <textarea class="form-control form-control-danger form-control-success" id="message" rows="5" name="message" placeholder="Hi there! My name is John Smith..."></textarea>
               </fieldset>
           </div>
           <div class="modal-footer">
