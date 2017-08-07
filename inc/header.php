@@ -40,9 +40,8 @@
               echo "<h1 class='display-2 m-t-1 m-b-2 white'>Thank you!</h1>";
               echo "<p class='lead white'>You will be redirected shortly.</p>";
             } else { ?>
+              <p class="lead white">Aspriring Full-Stack Developer</p>
               <h1 class="display-2 m-t-1 m-b-2 white">James Barrett</h1>
-              <p class="lead white">Let's keep this simple. I am an aspiring Front-End Developer,
-              lifelong learner and Arsenal sufferer. View my work below.</p>
               <p class="lead white border"><a class="contact-link white" href="#" data-toggle="modal" data-target="#contact">Contact me here.</a></p>
               <a href="#work"><i class="fa fa-2x fa-chevron-down" aria-hidden="true"></i></a>
             <?php } ?>

@@ -27,7 +27,7 @@ function checkNameLength() {
 function checkEmailLength() {
   if($(this).val().length < 1) {
 		validateEmail(this);
-  } 
+  }
 }
 
 // Check length of message field
