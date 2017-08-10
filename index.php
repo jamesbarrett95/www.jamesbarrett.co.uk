@@ -46,6 +46,9 @@ error_reporting(-1);
     }
  include("inc/header.php");
 ?>
+
+    <!--About-->
+    <?php include("inc/about.php"); ?>
     <!--Work-->
     <div class="container-fluid text-xs-center" id="work">
       <div class="row no-gutter">
