@@ -1,11 +1,15 @@
-<div class="container-fluid" id=about>
+<div class="container-fluid about" id=about>
   <div class="row relative">
     <div class="divider"></div>
-    <div class="col col-sm-6 no-gutters-xs left">
-      <img class="img-fluid visible-xs" src="./img/jamesbarrett-mobile.png" alt="A picture of James Barrett!">
-      <img class="img-fluid hidden-xs about-img visible-sm" src="./img/jamesbarrett-desktop.jpg" alt="A picture of James Barrett!">
+    <div class="col col-sm-6 m-b-0 no-gutters left">
+      <div class="about-img about-img__mobile visible-xs"></div>
+      <div class="about-img about-img__large hidden-xs visible-sm"></div>
+      <div class="about-img about-img__extralarge hidden-xs visible-xl"></div>
     </div>
     <div class="col col-sm-6 right">
+      <h2>
+        About
+      </h2>
       <p>
         Hi there! I am James, an aspiring full-stack JavaScript developer. I am currently an undergraduate
         at the University of Portsmouth studying Web Technologies. I am in my 4th and final year, where I am
@@ -18,7 +22,7 @@
       <p>
         I believe that learning is as essential as eating. I love to learn new things, whether it be
         keeping up with the latest trends and technologies in the web industry, reading books regularly
-        or new fitness programmes, I'm open to anything!
+        or new fitness programmes. I'm open to anything!
       </p>
     </div>
   </div>

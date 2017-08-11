@@ -49,13 +49,21 @@ error_reporting(-1);
 
     <!--About-->
     <?php include("inc/about.php"); ?>
+    <!--Skills-->
+    <?php include("inc/skills.php"); ?>
     <!--Work-->
-    <div class="container-fluid text-xs-center" id="work">
+    <section id="work">
+    <div class="container text-xs-center m-y-2" id="work">
+      <div class="row">
+        <div class="col-sm-12">
+          <h2>Work</h2>
+        </div>
+      </div>
       <div class="row no-gutter">
         <!-- FIFAScount Column -->
         <div class="col-md-6 col-sm-12">
           <div class="box p-x-3">
-            <h2 class="m-t-3">FIFAScout - Coming soon!</h2>
+            <h3 class="m-t-3">FIFAScout - Coming soon!</h3>
             <hr>
             <p class="m-t-1">A FIFA Esports Web Application for displaying user statistics and tracking events</p>
             <p>Built with Pug, SCSS, Express.js, D3.js, MongoDB, WebPack</p>
@@ -66,7 +74,7 @@ error_reporting(-1);
         <!-- ThePokeRaf Column -->
         <div class="col-md-6 col-sm-12">
           <div class="box p-x-3 pokeraf">
-            <h2 class="m-t-3">ThePokeRaf</h2>
+            <h3 class="m-t-3">ThePokeRaf</h3>
             <hr>
             <p class="m-t-1">A simple website for a Pokemon Youtuber with over 10 Thousand Subscribers.</p>
             <p>Built with HTML, CSS, jQuery and PHP.</p>
@@ -80,7 +88,7 @@ error_reporting(-1);
         <!-- JacksonJacobDeveloper Column -->
         <div class="col-md-6 col-sm-12">
           <div class="box p-x-3 jacksonjacobdeveloper">
-            <h2 class="m-t-3">Jackson Jacob Developer</h2>
+            <h3 class="m-t-3">Jackson Jacob Developer</h3>
             <hr>
             <p class="m-t-1">A portfolio website for a Computer Science undergraduate, Jackson Jacob, to showcase
             all of his work.</p>
@@ -92,7 +100,7 @@ error_reporting(-1);
         <!-- Weather App Column -->
         <div class="col-md-6 col-sm-12">
           <div class="box p-x-3">
-            <h2 class="m-t-3">Weather App</h2>
+            <h3 class="m-t-3">Weather App</h3>
             <hr>
             <p class="m-t-1">FreeCodeCamp's intermediate front-end project challenge - Weather App</p>
             <p>Built with HTML, CSS and JavaScript.</p>
@@ -106,7 +114,7 @@ error_reporting(-1);
         <!-- Simon Game Column -->
         <div class="col-md-6 col-sm-12">
           <div class="box p-x-3">
-            <h2 class="m-t-3">Simon Game</h2>
+            <h3 class="m-t-3">Simon Game</h3>
             <hr>
             <p class="m-t-1">FreeCodeCamp's adavanced front-end project challenge - Simon Game.</p>
             <p>Built with HTML, CSS, and JavaScript</p>
@@ -117,7 +125,7 @@ error_reporting(-1);
         <!-- To-Do Application Column -->
         <div class="col-md-6 col-sm-12">
           <div class="box p-x-3">
-            <h2 class="m-t-3">To-Do Application</h2>
+            <h3 class="m-t-3">To-Do Application</h3>
             <hr>
             <p class="m-t-1">Simple To-Do application which utilises Local Storage to keep track of my tasks easily</p>
             <p>Built with HTML, CSS and JavaScript</p>
@@ -131,7 +139,7 @@ error_reporting(-1);
         <!-- Tic Tac Toe Column-->
         <div class="col-md-6 col-sm-12">
           <div class="box p-x-3">
-            <h2 class="m-t-3">Tic Tac Toe</h2>
+            <h3 class="m-t-3">Tic Tac Toe</h3>
             <hr>
             <p class="m-t-1">FreeCodeCamp's adavanced front-end project challenge - Tic Tac Toe.</p>
             <p>Built with HTML, CSS, and JavaScript</p>
@@ -142,7 +150,7 @@ error_reporting(-1);
         <!-- Pomodoro Clock Column -->
         <div class="col-md-6 col-sm-12">
           <div class="box p-x-3">
-            <h2 class="m-t-3">Pomodoro Clock</h2>
+            <h3 class="m-t-3">Pomodoro Clock</h3>
             <hr>
             <p class="m-t-1">FreeCodeCamp's adavanced front-end project challenge - Pomodoro Clock.</p>
             <p>Built with HTML, CSS and JavaScript</p>
@@ -156,7 +164,7 @@ error_reporting(-1);
         <!-- Twitch Viewer Column-->
         <div class="col-md-6 col-sm-12">
           <div class="box p-x-3">
-            <h2 class="m-t-3">Twitch Viewer</h2>
+            <h3 class="m-t-3">Twitch Viewer</h3>
             <hr>
             <p class="m-t-1">FreeCodeCamp's intermediate front-end project challenge - Twitch Viewer.</p>
             <p>Built with HTML, CSS, and JavaScript</p>
@@ -167,7 +175,7 @@ error_reporting(-1);
         <!-- JavaScript Calculator Column -->
         <div class="col-md-6 col-sm-12">
           <div class="box p-x-3">
-            <h2 class="m-t-3">JavaScript Calculator</h2>
+            <h3 class="m-t-3">JavaScript Calculator</h3>
             <hr>
             <p class="m-t-1">FreeCodeCamp's adavanced front-end project challenge - JavaScript Calculator.</p>
             <p>Built with HTML, CSS and JavaScript</p>
@@ -181,7 +189,7 @@ error_reporting(-1);
         <!-- Node.js Console Application-->
         <div class="col-md-6 col-sm-12">
           <div class="box p-x-3">
-            <h2 class="m-t-3">Node.js Console Application</h2>
+            <h3 class="m-t-3">Node.js Console Application</h3>
             <hr>
             <p class="m-t-1">A simple Node.js console application to retrieve data from an API and display it to the console.</p>
             <p>Built with JavaScript and Node.js.</p>
@@ -192,7 +200,7 @@ error_reporting(-1);
         <!-- Wikipedia Viewer -->
         <div class="col-md-6 col-sm-12">
           <div class="box p-x-3">
-            <h2 class="m-t-3">Wikipedia Viewer</h2>
+            <h3 class="m-t-3">Wikipedia Viewer</h3>
             <hr>
             <p class="m-t-1">FreeCodeCamp's intermediate front-end project challenge - Wikipedia Viewer.</p>
             <p>Built with HTML, CSS and JavaScript</p>
@@ -201,8 +209,8 @@ error_reporting(-1);
           </div>
         </div>
       </div>
-
     </div>
+  </section>
 
     <!-- FIFAScout Modal -->
     <div class="modal fade" tabindex="-1" role="dialog" id="fifascout">

@@ -13,9 +13,12 @@ hr {
   color: #FFF;
 }
 
-/* Heading for no JavaScript Enabled */
 h2 {
-  font-size: 1.25em;
+  margin-bottom: 25px;
+  font-size: 39px;
+  border-bottom: 2px solid;
+  padding-bottom: 10px;
+  width: 43px;
 }
 
 /*****************
@@ -75,7 +78,7 @@ h2 {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  background: linear-gradient(rgba(25, 0, 0, 0.5), rgba(255, 0, 0, 0.5)),
+  background: linear-gradient(rgba(25, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
   url(../img/jumbotron.jpg) no-repeat center center fixed;
   background-size: cover;
 }
@@ -98,14 +101,14 @@ h2 {
   margin: 0 auto;
   color: #FFF;
   background: none;
-  border: 1px solid red;
+  border: 1px solid #FFF;
   width: 177px;
   height: 50px;
   display: block;
 }
 
 .contactBtn:hover {
-  background: rgba(255, 0, 0, 0.3);
+  background: rgba(255, 255, 255, 0.3);
 }
 
 @media screen and (max-width: 768px) {
@@ -127,12 +130,40 @@ h2 {
 /*****************
    About
 *****************/
+
+.about-img {
+  height: 100%;
+  width: 100%;
+  background-size: cover;
+}
+
+.about-img.about-img__mobile {
+  background-image: url('../img/jamesbarrett-mobile.png');
+  background-position: 50%;
+  border-radius: 50%;
+  width: 238px;
+  height: 238px;
+  margin: 0 auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.about-img.about-img__large {
+  background-image: url('../img/jamesbarrett-desktop.jpg');
+  background-position: 70%;
+}
+
+.about-img.about-img__extralarge {
+  background-image: url('../img/jamesbarrett-extra-large.jpg');
+  background-position: 70%;
+}
+
 .divider {
   display: none;
   background: #FFF;
   position: absolute;
   height: 100%;
-  width: 96px;
+  width: 104px;
   z-index: 1;
   left: 50%;
   transform: skewX(9deg);
@@ -151,12 +182,21 @@ h2 {
   z-index: 2;
 }
 
+.no-gutters {
+  padding-left: 0;
+  padding-right: 0;
+}
+
 .right p {
   text-align: justify;
   max-width: 700px;
 }
 
 .visible-xs {
+  display: none;
+}
+
+.visible-xl {
   display: none;
 }
 
@@ -168,20 +208,24 @@ h2 {
   .visible-xs {
     display: block;
   }
-
-  .no-gutters-xs {
-    padding-left: 0;
-    padding-right: 0;
-  }
 }
 
 @media (min-width: 544px) {
+  .circle {
+    width: 125px;
+    height: 125px;
+  }
+
   .visible-sm {
     display: block;
   }
 
+  .divider {
+    display: block;
+  }
+
   .col {
-    height: 600px;
+    height: 647px;
   }
 
   .left {
@@ -192,24 +236,63 @@ h2 {
 }
 
 @media (min-width: 768px) {
-  .about-img {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-  }
-
-  .left {
-    padding: 0 90px 0 10px;
-  }
-
-  .divider {
-    display: block;
-  }
 
   .right p {
     margin-left: 10px;
     margin-right: 50px;
+  }
+
+  .right h2 {
+    margin-left: 10px;
+    max-width: 700px;
+  }
+}
+
+@media (min-width: 1700px) {
+  .visible-sm {
+    display: none;
+  }
+
+  .visible-xl {
+    display: block;
+  }
+}
+
+/*****************
+   Skills
+******************/
+
+.skills {
+  background: #46412E;
+}
+
+.lead {
+  font-size: 1.2em;
+}
+
+.circle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  border: 1px solid #FFF;
+  border-width: 9px;
+  width: 110px;
+  height: 110px;
+  margin: 10px auto;
+}
+
+/*.divider-work {
+  position: absolute;
+  width: 100%;
+  height: 40px;
+  background: blue;
+}*/
+
+@media (min-width: 544px) {
+  .circle {
+    width: 125px;
+    height: 125px;
   }
 }
 
@@ -232,18 +315,6 @@ h2 {
   background-size: 100% 202%;
   transition: all 0.2s ease;
   animation: down-bump 0.4s ease;
-}
-
-.pokeraf {
-  background: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)),
-  url(../img/pokeraf.jpg) no-repeat center center fixed;
-  background-size: cover;
-}
-
-.jacksonjacobdeveloper {
-  background: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)),
-  url(../img/code-bg-min.jpg) no-repeat center center fixed;
-  background-size: cover;
 }
 
 /*****************
@@ -271,4 +342,12 @@ label {
 
 .relative {
   position: relative;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.color-white {
+  color: #FFF;
 }
