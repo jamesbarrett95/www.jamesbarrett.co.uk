@@ -52,7 +52,7 @@ error_reporting(-1);
     <!--Skills-->
     <?php include("inc/skills.php"); ?>
     <!--Work-->
-    <section id="work">
+    <section class="work" id="work">
     <div class="container text-xs-center m-y-2" id="work">
       <div class="row">
         <div class="col-sm-12">
