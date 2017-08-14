@@ -32,8 +32,8 @@ error_reporting(-1);
       $mail->Port = 25;
       $mail->Username = $postmarkKey;
       $mail->Password = $postmarkKey;
-      $mail->setFrom($email);
-      $mail->addAddress($email, "James");
+      $mail->setFrom($emailKey);
+      $mail->addAddress($emailKey, "James");
       $mail->isHTML(false);
       $mail->Subject = 'Message from ' . $name;
       $mail->Body    = $email_body;
@@ -78,7 +78,7 @@ error_reporting(-1);
     <!--To-Do Application-->
     <?php include("inc/modals/todoapp.php"); ?>
     <!--Tic-Tac-Toe-->
-    <?php include("inc/modals/tietactoe.php"); ?>
+    <?php include("inc/modals/tictactoe.php"); ?>
     <!--Pomodoro Clock-->
     <?php include("inc/modals/pomodoro.php"); ?>
     <!--Twitch Viewer-->
