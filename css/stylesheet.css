@@ -31,6 +31,7 @@ h2 {
 
 .navbar {
   text-align: center;
+  border-bottom: 2px solid;
 }
 
 .navbar ul {
@@ -40,6 +41,7 @@ h2 {
 .navbar ul li > a {
   position: relative;
   text-decoration: none;
+  color: #000;
 }
 
 .navbar ul li > a:hover {
@@ -68,7 +70,7 @@ h2 {
 }
 
 /*****************
-   Jumbotron
+   HERO
 ******************/
 .jumbotron {
   margin-top: 50px;
@@ -81,6 +83,18 @@ h2 {
   background: linear-gradient(rgba(25, 0, 0, 0.5), rgba(70, 65, 46, 0.7)),
   url(../img/jumbotron.jpg) no-repeat center center fixed;
   background-size: cover;
+}
+
+.hero-social {
+  display: none;
+}
+
+.hero-social i {
+  color: #FFF;
+}
+
+.hero-social i:hover {
+  color: rgba(255, 255, 255, 0.7);
 }
 
 .lead {
@@ -109,6 +123,16 @@ h2 {
 
 .contactBtn:hover {
   background: rgba(255, 255, 255, 0.3);
+}
+
+@media screen and (min-width: 544px) {
+  .hero-social {
+    display: block;
+    position: absolute;
+    top: 37%;
+    left: 87%;
+    list-style: none;
+  }
 }
 
 @media screen and (max-width: 768px) {
@@ -357,6 +381,41 @@ label {
 }
 
 /*****************
+   Footer
+******************/
+
+footer {
+  background: rgb(70,65,46);
+  position: relative;
+}
+
+.footer-divider {
+  position: absolute;
+  width: 100%;
+  height: 68px;
+  background: rgb(70,65,46);
+  top: -50px;
+  transform: skewY(-1deg);
+}
+
+footer ul li {
+  list-style: none;
+}
+
+footer ul li i:hover {
+  color: rgba(255, 255, 255, 0.7)
+}
+
+footer a {
+  color: #FFF;
+  font-weight: 800;
+}
+
+footer a:hover {
+  color: #FFF;
+}
+
+/*****************
    Helpers
 ******************/
 
@@ -371,3 +430,29 @@ label {
 .color-white {
   color: #FFF;
 }
+
+.m-t-4 {
+  margin-bottom: 3.5rem;
+}
+
+.m-b-4 {
+  margin-bottom: 3.5rem;
+}
+
+.m-t-5 {
+  margin-bottom: 4rem;
+}
+
+.m-b-5 {
+  margin-bottom: 4rem;
+}
+
+.m-t-6 {
+  margin-bottom: 4.5rem;
+}
+
+.m-b-6 {
+  margin-bottom: 4.5rem;
+}
+
+

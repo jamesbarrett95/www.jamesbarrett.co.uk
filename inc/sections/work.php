@@ -1,4 +1,4 @@
-<section class="work" id="work">
+<section class="work m-b-6" id="work">
   <div class="container text-xs-center m-y-2" id="work">
     <div class="row">
       <div class="col-sm-12">
