@@ -1,3 +1,10 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<!--Head-->
+<?php include("inc/sections/head.php"); ?>
+
 <?php
 include("./keys.php");
 ini_set('display_startup_errors', 1);
@@ -49,14 +56,9 @@ error_reporting(-1);
  include("inc/sections/hero.php");
 ?>
 
-<!DOCTYPE html>
   <!--SECTIONS-->
-    <!--Head-->
-    <?php include("inc/sections/head.php"); ?>
     <!--Nav-->
     <?php include("inc/sections/nav.php"); ?>
-    <!--Hero-->
-    <!-- <?php include("inc/sections/hero.php"); ?> -->
     <!--About-->
     <?php include("inc/sections/about.php"); ?>
     <!--Skills-->
