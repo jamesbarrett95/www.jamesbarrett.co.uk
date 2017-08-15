@@ -44,6 +44,16 @@ h2 {
   color: #000;
 }
 
+.navbar ul {
+  display: inline-block;
+}
+
+.navbar ul li > a {
+  position: relative;
+  text-decoration: none;
+  color: #000;
+}
+
 .navbar ul li > a:hover {
   color: #000;
 }
@@ -125,13 +135,15 @@ h2 {
   background: rgba(255, 255, 255, 0.3);
 }
 
+
 @media screen and (min-width: 544px) {
   .hero-social {
     display: block;
     position: absolute;
-    top: 37%;
-    left: 87%;
+    top: 0;
+    left: 103%;
     list-style: none;
+    font-size: 14px;
   }
 }
 
@@ -142,12 +154,23 @@ h2 {
 }
 
 @media screen and (min-width: 768px) {
+  .hero-social {
+    font-size: initial;
+    left: 115%;
+  }
+
   .nav-link {
     font-size: 20px;
   }
 
   .lead {
     font-size: 1.6em;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .hero-social {
+    left: 150%;
   }
 }
 
