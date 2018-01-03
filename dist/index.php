@@ -98,6 +98,6 @@ error_reporting(-1);
 
     <!--Scripts -->
     <?php include("inc/scripts.php"); ?>
-    
+
   </body>
   </html>
